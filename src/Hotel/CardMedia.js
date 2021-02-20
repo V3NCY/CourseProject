@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './cardMedia.scss';
+import "../Hotel/scss/cardMedia.scss";
 import Slider from '../Hotel/Slider';
 
 function CardMedia({hotel}) {

@@ -52,7 +52,6 @@ export default function RecipeReviewCard() {
     
     <div className="card-deck justify-content-center">
       <div className="container mb-3">
-      <h1> Новини </h1>
       </div>
     <Card className={classes.root} className="mb-3 mr-3" style={{ width: '20rem'}}>
       <CardHeader

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
-import './card.scss';
+import "../Hotel/scss/card.scss";
 import CardMedia from './CardMedia';
 import Booking from './Booking';
 

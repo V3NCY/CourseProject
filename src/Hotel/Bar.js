@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {search} from '../redux/actions';
-import './bar.scss';
+import '../Hotel/scss/bar.scss';
 
 class SearchBar extends Component {
 

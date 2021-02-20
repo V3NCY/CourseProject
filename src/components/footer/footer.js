@@ -10,7 +10,8 @@ const Footer = () => {
             <div className="col">
                   <h5 className="title">Община Копривщица</h5>
                   <div className="footer-images-container d-flex align-items-center">
-                    <Image src="https://koprivshtitsa-bg.com/images/gerb11.png" className="footer-images"/>
+                    <Image src="https://koprivshtitsa-bg.com/images/gerb11.png"
+                     className="footer-images"/>
                     <Image src="https://koprivshtitsa-bg.com/images/eu.jpg" className="footer-images ml-4"/>
                     <Image src="https://koprivshtitsa-bg.com/images/bg.jpg" className="footer-images ml-4"/>
                   </div>

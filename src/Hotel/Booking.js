@@ -3,7 +3,7 @@ import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 import {DateRangePicker} from 'react-dates';
 import 'moment/locale/en-gb';
-import './booking.scss';
+import "../Hotel/scss/booking.scss";
 import moment from 'moment';
 import Message from './Message';
 import PropTypes from 'prop-types';

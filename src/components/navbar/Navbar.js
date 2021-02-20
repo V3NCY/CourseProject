@@ -23,7 +23,7 @@ const Example = (props) => {
   
 
  return (
-        <Navbar color="light" light expand="md" className="shadow p-1 bg-light">
+        <Navbar color="dark" dark expand="md" className="shadow p-1 bg-light">
 <NavbarBrand tag={Link} to="/"><Logo width="50"/>Копривщица</NavbarBrand>
             <NavbarToggler onClick={toggle}/>
             <Collapse isOpen={isOpen} navbar>
