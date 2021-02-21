@@ -4,8 +4,7 @@ import Card from "../Hotel/Card";
 import SearchBar from "../Hotel/SearchBarContainer";
 
 function Hotels({ hotels }) {
-  const count =
-    hotels.length > 0 ? `${hotels.length} ` : "Няма намерени хотели";
+  const count = hotels.length > 0 ? `${hotels.length} ` : "";
   const cards =
     hotels.length > 0 ? (
       hotels.map((h) => <Card key={h.id} hotel={h} />)
@@ -14,7 +13,6 @@ function Hotels({ hotels }) {
     );
 
   return (
-
     <section className="page">
       <SearchBar />
       <h2 className="page__title">Всички хотели: {count}</h2>

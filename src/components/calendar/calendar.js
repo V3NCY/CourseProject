@@ -1,5 +1,5 @@
 import "date-fns";
-import React, {Link} from "react";
+import React, { Link } from "react";
 import Grid from "@material-ui/core/Grid";
 import DateFnsUtils from "@date-io/date-fns";
 import {
@@ -58,7 +58,7 @@ export default function MaterialUIPickers() {
         />
         <div className="mt-4">
           <Button variant="outlined" color="primary" href="/hotels">
-            Резервирайте сега
+            Резервирайте хотел
           </Button>
         </div>
       </Grid>

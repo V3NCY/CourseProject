@@ -1,15 +1,14 @@
-import React, {Component} from 'react';
-import 'react-dates/initialize';
-import 'react-dates/lib/css/_datepicker.css';
-import {DateRangePicker} from 'react-dates';
-import 'moment/locale/en-gb';
+import React, { Component } from "react";
+import "react-dates/initialize";
+import "react-dates/lib/css/_datepicker.css";
+import { DateRangePicker } from "react-dates";
+import "moment/locale/en-gb";
 import "../Hotel/scss/booking.scss";
-import moment from 'moment';
-import Message from './Message';
-import PropTypes from 'prop-types';
+import moment from "moment";
+import Message from "./Message";
+import PropTypes from "prop-types";
 
 class Booking extends Component {
-
   constructor(props) {
     super(props);
 
@@ -18,29 +17,29 @@ class Booking extends Component {
       endDate: null,
       focusedInput: null,
       duration: 0,
-      booked: false
+      booked: false,
     };
 
     this.handleDateChange = this.handleDateChange.bind(this);
     this.book = this.book.bind(this);
   }
 
-  handleDateChange({startDate, endDate}) {
+  handleDateChange({ startDate, endDate }) {
     this.setState({
       startDate,
       endDate,
-      duration: moment(endDate).diff(startDate, 'days')
+      duration: moment(endDate).diff(startDate, "days"),
     });
   }
 
   book() {
-    this.setState({booked: true});
+    this.setState({ booked: true });
   }
 
   render() {
-    const {startDate, endDate, focusedInput, duration, booked} = this.state;
-    const startStr = moment(startDate).format('dddd, D MMMM YYYY');
-    const endStr = moment(endDate).format('dddd, D MMMM YYYY');
+    const { startDate, endDate, focusedInput, duration, booked } = this.state;
+    const startStr = moment(startDate).format("dddd, D MMMM YYYY");
+    const endStr = moment(endDate).format("dddd, D MMMM YYYY");
 
     return (
       <div className="booking">
@@ -54,21 +53,24 @@ class Booking extends Component {
             endDateId="end_date_id"
             onDatesChange={this.handleDateChange}
             focusedInput={focusedInput}
-            onFocusChange={focusedInput => this.setState({ focusedInput })}
+            onFocusChange={(focusedInput) => this.setState({ focusedInput })}
           />
         </div>
 
-        {booked && <Message
-          hotelName={this.props.hotel.name}
-          startDate={startStr}
-          endDate={endStr}
-          duration={duration}
-        />}
+        {booked && (
+          <Message
+            hotelName={this.props.hotel.name}
+            startDate={startStr}
+            endDate={endStr}
+            duration={duration}
+          />
+        )}
 
-        {!booked && <button onClick={this.book} className="card__link">
-          Резервирайте сега
-        </button>}
-
+        {!booked && (
+          <button onClick={this.book} className="card__link">
+            Резервирайте сега
+          </button>
+        )}
       </div>
     );
   }
@@ -80,8 +82,8 @@ Booking.propTypes = {
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     images: PropTypes.arrayOf(PropTypes.string.isRequired),
-    stars: PropTypes.number.isRequired
-  }).isRequired
+    stars: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default Booking;

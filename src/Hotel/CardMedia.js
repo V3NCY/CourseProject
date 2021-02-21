@@ -1,14 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 import "../Hotel/scss/cardMedia.scss";
-import Slider from '../Hotel/Slider';
+import Slider from "../Hotel/Slider";
 
-function CardMedia({hotel}) {
+function CardMedia({ hotel }) {
   return (
     <div className="card-media">
-      <Slider hotel={hotel}/>
-      <span role="img" className="card-media__star" aria-label="star">★ {hotel.stars}</span>
-      
+      <span role="img" className="card-media__star my-2" aria-label="star">
+        {" "}
+        ⭐ {hotel.stars}
+      </span>
+      <Slider hotel={hotel} />
     </div>
   );
 }
@@ -20,8 +22,8 @@ CardMedia.propTypes = {
     city: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     images: PropTypes.arrayOf(PropTypes.string.isRequired),
-    stars: PropTypes.number.isRequired
-  }).isRequired
+    stars: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default CardMedia;

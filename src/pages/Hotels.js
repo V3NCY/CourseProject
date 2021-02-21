@@ -5,11 +5,7 @@ import { setHotels } from "../redux/actions";
 function Hotels({ dispatch }) {
   dispatch(setHotels());
 
-  return (
-    <div className="hotels">
-      <h1 className="mb-4">Хотели</h1>
-    </div>
-  );
+  return <div className="hotels"></div>;
 }
 
 export default connect()(Hotels);

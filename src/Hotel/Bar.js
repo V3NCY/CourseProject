@@ -1,14 +1,13 @@
-import React, {Component} from 'react';
-import {search} from '../redux/actions';
-import '../Hotel/scss/bar.scss';
+import React, { Component } from "react";
+import { search } from "../redux/actions";
+import "../Hotel/scss/bar.scss";
 
 class SearchBar extends Component {
-
   constructor(props) {
     super(props);
 
     this.state = {
-      key: this.props.search_key
+      key: this.props.search_key,
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -17,7 +16,7 @@ class SearchBar extends Component {
 
   handleChange(e) {
     this.setState({
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   }
 
@@ -28,8 +27,7 @@ class SearchBar extends Component {
 
   render() {
     return (
-
-      <form className="search-bar" onSubmit={this.handleSubmit}>
+      <form className="search-bar my-3" onSubmit={this.handleSubmit}>
         <input
           type="text"
           name="key"
@@ -39,9 +37,10 @@ class SearchBar extends Component {
           onChange={this.handleChange}
           value={this.state.key}
         />
-        <button type="submit"className="search-bar__btn">Търси</button>
+        <button type="submit" className="search-bar__btn">
+          Търси
+        </button>
       </form>
-      
     );
   }
 }

@@ -1,21 +1,28 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import PropTypes from 'prop-types';
+import React from "react";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import "../Hotel/scss/card.scss";
-import CardMedia from './CardMedia';
-import Booking from './Booking';
+import CardMedia from "./CardMedia";
+import Booking from "./Booking";
 
-function HotelCard({hotel, expanded}) {
-  let actions = <Link to={`/hotels/${hotel.id}`} className="card__link" title={`Резервирайте сега ${hotel.name}`}>Резервирайте сега</Link>;
+function HotelCard({ hotel, expanded }) {
+  let actions = (
+    <Link
+      to={`/hotels/${hotel.id}`}
+      className="card__link"
+      title={`Резервирайте сега ${hotel.name}`}
+    >
+      Резервирайте сега
+    </Link>
+  );
 
   if (expanded) {
-    actions = <Booking hotel={hotel}/>;
+    actions = <Booking hotel={hotel} />;
   }
 
   return (
     <article className="card">
-
-      <CardMedia hotel={hotel}/>
+      <CardMedia hotel={hotel} />
 
       <div className="card-content">
         <Link to={`/hotels/${hotel.id}`} className="card__name">
@@ -24,14 +31,13 @@ function HotelCard({hotel, expanded}) {
         <p className="card__description">{hotel.description}</p>
 
         {actions}
-
       </div>
     </article>
   );
 }
 
 HotelCard.defaultProps = {
-  expanded: false
+  expanded: false,
 };
 
 HotelCard.propTypes = {
@@ -40,8 +46,8 @@ HotelCard.propTypes = {
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     images: PropTypes.arrayOf(PropTypes.string.isRequired),
-    stars: PropTypes.number.isRequired
-  }).isRequired
+    stars: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default HotelCard;
