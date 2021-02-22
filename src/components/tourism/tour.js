@@ -17,8 +17,9 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  card: {
     maxWidth: 345,
+    marginBottom: 15,
   },
   media: {
     height: 0,
@@ -35,7 +36,19 @@ const useStyles = makeStyles((theme) => ({
     transform: "rotate(180deg)",
   },
   avatar: {
+    width: 60,
     backgroundColor: green[400],
+  },
+  root: {
+    display: "flex",
+    justifyContent: "center",
+    flexWrap: "wrap",
+    "& > *": {
+      margin: theme.spacing(0.5),
+    },
+  },
+  list: {
+    width: 200,
   },
 }));
 
@@ -57,7 +70,7 @@ export default function TourReviewCard() {
             <CardHeader
               avatar={
                 <Avatar aria-label="tour" className={classes.avatar}>
-                  Т
+                  M
                 </Avatar>
               }
               action={
@@ -127,7 +140,7 @@ export default function TourReviewCard() {
             <CardHeader
               avatar={
                 <Avatar aria-label="tour" className={classes.avatar}>
-                  Т
+                  M
                 </Avatar>
               }
               action={
@@ -198,7 +211,7 @@ export default function TourReviewCard() {
             <CardHeader
               avatar={
                 <Avatar aria-label="tour" className={classes.avatar}>
-                  Т
+                  M
                 </Avatar>
               }
               action={
@@ -264,7 +277,7 @@ export default function TourReviewCard() {
             <CardHeader
               avatar={
                 <Avatar aria-label="tour" className={classes.avatar}>
-                  Т
+                  M
                 </Avatar>
               }
               action={
@@ -331,7 +344,7 @@ export default function TourReviewCard() {
             <CardHeader
               avatar={
                 <Avatar aria-label="tour" className={classes.avatar}>
-                  Т
+                  M
                 </Avatar>
               }
               action={
@@ -395,7 +408,7 @@ export default function TourReviewCard() {
             <CardHeader
               avatar={
                 <Avatar aria-label="tour" className={classes.avatar}>
-                  Т
+                  M
                 </Avatar>
               }
               action={

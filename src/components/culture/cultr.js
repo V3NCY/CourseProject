@@ -18,8 +18,9 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 import { CardLink } from "reactstrap";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  card: {
     maxWidth: 345,
+    marginBottom: 15,
   },
   media: {
     height: 0,
@@ -36,7 +37,19 @@ const useStyles = makeStyles((theme) => ({
     transform: "rotate(180deg)",
   },
   avatar: {
-    backgroundColor: pink[500],
+    width: 60,
+    backgroundColor: pink[400],
+  },
+  root: {
+    display: "flex",
+    justifyContent: "center",
+    flexWrap: "wrap",
+    "& > *": {
+      margin: theme.spacing(0.5),
+    },
+  },
+  list: {
+    width: 200,
   },
 }));
 
@@ -67,7 +80,7 @@ export default function CultureReviewCard() {
                   <MoreVertIcon />
                 </IconButton>
               }
-              title="Програма 141 години свободна България"
+              title="142 години Освободена България"
             />
             <CardMedia
               className={classes.media}
@@ -182,7 +195,7 @@ export default function CultureReviewCard() {
                   <MoreVertIcon />
                 </IconButton>
               }
-              title="144 Години от избухването на Априлското въстание"
+              title="144 Години от Априлското въстание"
             />
             <CardMedia
               className={classes.media}
@@ -297,7 +310,7 @@ export default function CultureReviewCard() {
                   <MoreVertIcon />
                 </IconButton>
               }
-              title='Постоянна изложба от наградени детски рисунки"'
+              title='Постоянна изложба от детски рисунки"'
             />
             <CardMedia
               className={classes.media}

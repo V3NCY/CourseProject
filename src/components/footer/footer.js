@@ -1,6 +1,6 @@
 import React from "react";
-
 import { Image } from "react-bootstrap";
+import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -23,8 +23,15 @@ const Footer = () => {
                 className="footer-images ml-4"
               />
             </div>
+            <div className="share my-3">
+              <FaInstagram size={38} className="ml-4" />
+
+              <FaFacebook size={38} className="ml-4" />
+
+              <FaTwitter size={38} className="ml-4" />
+            </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-2">
             <h5 className="title">Партньори:</h5>
             <ul>
               <li className="list-unstyled">
