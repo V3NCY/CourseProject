@@ -5,11 +5,10 @@ import HomeLayout from "./components/layouts/Home";
 import Tourism from "./pages/Tourism";
 import Museums from "./pages/Museums";
 import News from "./pages/News";
-import Prices from "./pages/Prices";
+import Information from "./pages/Information";
 import Contacts from "./pages/Contacts";
 import Hotels from "./pages/Hotels";
 import HotelLayout from "./components/layouts/hotels";
-import Transport from "./pages/Transport";
 import HotelContainer from "./Hotel/HotelContainer";
 import HotelsContainer from "./Hotel/HotelsContainer";
 
@@ -67,18 +66,10 @@ const routes = [
     ),
   },
   {
-    path: "/prices",
+    path: "/information",
     main: () => (
       <MainLayout>
-        <Prices></Prices>
-      </MainLayout>
-    ),
-  },
-  {
-    path: "/transport",
-    main: () => (
-      <MainLayout>
-        <Transport></Transport>
+        <Information></Information>
       </MainLayout>
     ),
   },
