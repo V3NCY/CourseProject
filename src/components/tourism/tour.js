@@ -66,7 +66,8 @@ export default function TourReviewCard() {
       <h3 className="ml-2">Маршрути</h3>
       <div className="row align-items-center">
         <div className="col-sm-4">
-          <Card className={classes.root} className="my-3">
+          {/* Card 1 */}
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="tour" className={classes.avatar}>
@@ -136,7 +137,8 @@ export default function TourReviewCard() {
           </Card>
         </div>
         <div className="col-sm-4">
-          <Card className={classes.root} className="my-3">
+          {/* Card 2  */}
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="tour" className={classes.avatar}>
@@ -207,7 +209,8 @@ export default function TourReviewCard() {
           </Card>
         </div>
         <div className="col-sm-4">
-          <Card className={classes.root} className="my-3">
+          {/* Card 3 */}
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="tour" className={classes.avatar}>
@@ -273,7 +276,8 @@ export default function TourReviewCard() {
           </Card>
         </div>
         <div className="col-sm-4">
-          <Card className={classes.root} className="my-3">
+          {/* Card 4 */}
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="tour" className={classes.avatar}>
@@ -340,7 +344,8 @@ export default function TourReviewCard() {
           </Card>
         </div>
         <div className="col-sm-4">
-          <Card className={classes.root} className="my-3">
+          {/* Card 5 */}
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="tour" className={classes.avatar}>
@@ -404,7 +409,8 @@ export default function TourReviewCard() {
           </Card>
         </div>
         <div className="col-sm-4">
-          <Card className={classes.root} className="my-3">
+          {/* Card 6 */}
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="tour" className={classes.avatar}>

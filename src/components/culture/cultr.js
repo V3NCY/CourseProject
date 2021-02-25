@@ -68,7 +68,7 @@ export default function CultureReviewCard() {
       <div className="row align-items-center">
         <div className="col-sm-4">
           {/* Card 1 */}
-          <Card className={classes.root} className="my-3">
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="event" className={classes.avatar}>
@@ -126,7 +126,7 @@ export default function CultureReviewCard() {
         </div>
         {/* Card 2 */}
         <div className="col-sm-4">
-          <Card className={classes.root} className="my-3">
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="event" className={classes.avatar}>
@@ -183,7 +183,7 @@ export default function CultureReviewCard() {
         </div>
         {/* Card 3 */}
         <div className="col-sm-4">
-          <Card className={classes.root} className="my-3">
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="event" className={classes.avatar}>
@@ -231,9 +231,9 @@ export default function CultureReviewCard() {
               <CardContent>
                 <Typography paragraph>Повече:</Typography>
                 <Typography paragraph>
-                  <CardLink href="https://bg.wikipedia.org/wiki/Априлско_въстание">
-                    Априлско въстание
-                  </CardLink>
+                  Уважаеми съграждани и гости на града, каним Ви на богатата ни
+                  програма по повод Честване на 144 години от Априлското
+                  въстание.
                 </Typography>
               </CardContent>
             </Collapse>
@@ -241,7 +241,7 @@ export default function CultureReviewCard() {
         </div>
         {/* Card 4 */}
         <div className="col-sm-4">
-          <Card className={classes.root} className="my-3">
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="art" className={classes.avatar}>
@@ -298,7 +298,7 @@ export default function CultureReviewCard() {
         </div>
         {/* Card 5 */}
         <div className="col-sm-4">
-          <Card className={classes.root} className="my-3">
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="art" className={classes.avatar}>
@@ -346,7 +346,7 @@ export default function CultureReviewCard() {
               <CardContent>
                 <Typography paragraph>Повече:</Typography>
                 <Typography paragraph>
-                  Уважаеми съграждани и туристи, каним Ви на весела детска
+                  Уважаеми съграждани и туристи, каним Ви на една весела детска
                   изложба.
                 </Typography>
               </CardContent>
@@ -356,7 +356,7 @@ export default function CultureReviewCard() {
 
         {/* Card 6 */}
         <div className="col-sm-4">
-          <Card className={classes.root} className="my-3">
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="event" className={classes.avatar}>

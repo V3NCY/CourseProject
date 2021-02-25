@@ -64,7 +64,8 @@ export default function RecipeReviewCard() {
     <div className="container">
       <div className="row align-items-center">
         <div className="col-sm-4">
-          <Card className={classes.root} className="my-3">
+          {/* Card 1 */}
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="event" className={classes.avatar}>
@@ -117,7 +118,8 @@ export default function RecipeReviewCard() {
           </Card>
         </div>
         <div className="col-sm-4">
-          <Card className={classes.root} className="my-3">
+          {/* Card 2 */}
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="event" className={classes.avatar}>
@@ -171,7 +173,8 @@ export default function RecipeReviewCard() {
         </div>
 
         <div className="col-sm-4">
-          <Card className={classes.root} className="my-3">
+          {/* Card 3 */}
+          <Card raised className={classes.root} className="my-3">
             <CardHeader
               avatar={
                 <Avatar aria-label="event" className={classes.avatar}>
