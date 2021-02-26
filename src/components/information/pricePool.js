@@ -19,22 +19,28 @@ const PriceB = (props) => {
   };
 
   return (
-    <div className="row-md-2 mt-3 mb-3">
-      <Button color="primary" onClick={toggle}>
-        Цена на аквапарк - Копривщица
-      </Button>
-      <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}>Цена на аквапарк - Копривщица</ModalHeader>
-        <ModalBody>
-          <img src="https://i.ibb.co/jRZ1C6X/image.jpg" width="100%" />
-          <br />
-        </ModalBody>
-        <ModalFooter>
+    <div className="container">
+      <div className="row mt-2">
+        <div className="col-xs-2">
           <Button color="primary" onClick={toggle}>
-            Cancel
+            Цена на аквапарк - Копривщица
           </Button>
-        </ModalFooter>
-      </Modal>
+          <Modal isOpen={modal} toggle={toggle} className={className}>
+            <ModalHeader toggle={toggle}>
+              Цена на аквапарк - Копривщица
+            </ModalHeader>
+            <ModalBody>
+              <img src="https://i.ibb.co/jRZ1C6X/image.jpg" width="100%" />
+              <br />
+            </ModalBody>
+            <ModalFooter>
+              <Button color="primary" onClick={toggle}>
+                Cancel
+              </Button>
+            </ModalFooter>
+          </Modal>
+        </div>
+      </div>
     </div>
   );
 };

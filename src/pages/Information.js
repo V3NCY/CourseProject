@@ -24,12 +24,16 @@ function Information(props) {
       <div className="container">
         <h1> Полезна информация </h1>
         <div className="row mt-3">
-          <img
-            src="https://imgrabo.com/pics/companies/42ebb3a6595b31794f43de612c231113.jpeg"
-            alt="Info background"
-            width="50%"
-          ></img>
-          <div className="col my-2">
+          <div className="col">
+            {/* Image */}
+            <img
+              src="https://imgrabo.com/pics/companies/42ebb3a6595b31794f43de612c231113.jpeg"
+              alt="Info background"
+              width="100%"
+            ></img>
+          </div>
+          {/* Dropdown menu */}
+          <div className="col-md-4 my-3">
             <TreeView
               className={classes.root}
               defaultCollapseIcon={<ExpandMoreIcon />}

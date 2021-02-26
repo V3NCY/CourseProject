@@ -31,36 +31,35 @@ const Footer = () => {
               <FaTwitter size={38} className="ml-4" />
             </div>
           </div>
-          <div className="col-md-2">
-            <h5 className="title">Партньори:</h5>
-            <ul>
-              <li className="list-unstyled">
-                <a href="https://reactstrap.github.io/">Reactstrap</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="https://react-bootstrap.github.io/">React-Bootstrap</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="https://www.svgrepo.com/">SVGRepo</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="https://mdbootstrap.com/">MDBootstrap</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="https://material-ui.com/">Material-UI</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="https://fsymbols.com/signs/stars/">FSymbols Stars</a>
-              </li>
-            </ul>
+            <div className="col-md-2">
+              <h5 className="title">Партньори:</h5>
+              <ul>
+                <li className="list-unstyled">
+                  <a href="https://reactstrap.github.io/">Reactstrap</a>
+                </li>
+                <li className="list-unstyled">
+                  <a href="https://react-bootstrap.github.io/">
+                    React-Bootstrap
+                  </a>
+                </li>
+                <li className="list-unstyled">
+                  <a href="https://www.svgrepo.com/">SVGRepo</a>
+                </li>
+                <li className="list-unstyled">
+                  <a href="https://material-ui.com/">Material-UI</a>
+                </li>
+                <li className="list-unstyled">
+                  <a href="https://fsymbols.com/signs/stars/">FSymbols Stars</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="footer-copyright text-center py-3 col-12">
+            &copy; {new Date().getFullYear()} Copyright: По идея на официалния
+            сайт на{" "}
+            <a href="https://koprivshtitsa-bg.com/bg/">Община Копривщица </a>
           </div>
         </div>
-        <div className="footer-copyright text-center py-3 col-12">
-          &copy; {new Date().getFullYear()} Copyright: По идея на официалния
-          сайт на{" "}
-          <a href="https://koprivshtitsa-bg.com/bg/">Община Копривщица </a>
-        </div>
-      </div>
     </footer>
   );
 };
