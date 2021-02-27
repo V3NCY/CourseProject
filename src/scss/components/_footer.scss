@@ -2,6 +2,13 @@
   background-color: $footer-bg;
   color: $white;
 
+  ul {
+    padding: 0;
+    a {
+      color: blueviolet;
+    }
+  }
+
   .footer-images {
     width: 60px;
   }
