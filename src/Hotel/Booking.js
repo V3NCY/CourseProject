@@ -7,6 +7,7 @@ import "../Hotel/scss/booking.scss";
 import moment from "moment";
 import Message from "./Message";
 import PropTypes from "prop-types";
+import { Button } from "reactstrap";
 
 class Booking extends Component {
   constructor(props) {
@@ -67,9 +68,9 @@ class Booking extends Component {
         )}
 
         {!booked && (
-          <button onClick={this.book} className="card__link">
+          <Button onClick={this.book} className="card__link">
             Резервирайте сега
-          </button>
+          </Button>
         )}
       </div>
     );
