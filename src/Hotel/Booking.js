@@ -7,6 +7,7 @@ import "../Hotel/scss/booking.scss";
 import moment from "moment";
 import Message from "./Message";
 import PropTypes from "prop-types";
+import CommentInput from "./Comments/containers/CommentInput";
 import { Button } from "reactstrap";
 
 class Booking extends Component {
@@ -45,7 +46,6 @@ class Booking extends Component {
     return (
       <div className="booking">
         <p>Изберете дата на престой: </p>
-
         <div className="booking-dates">
           <DateRangePicker
             startDate={startDate}
@@ -57,7 +57,6 @@ class Booking extends Component {
             onFocusChange={(focusedInput) => this.setState({ focusedInput })}
           />
         </div>
-
         {booked && (
           <Message
             hotelName={this.props.hotel.name}
@@ -66,12 +65,12 @@ class Booking extends Component {
             duration={duration}
           />
         )}
-
         {!booked && (
           <Button onClick={this.book} className="card__link">
             Резервирайте сега
           </Button>
         )}
+        <CommentInput />
       </div>
     );
   }
